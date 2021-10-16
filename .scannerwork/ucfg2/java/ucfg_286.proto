@@ -1,17 +1,17 @@
 
-)domain.User#getFechaNac()Ljava/util/Date;Q
-EC:/Users/unaip/git/bets21github/Bets21/src/main/java/domain/User.java ("1*×
-1Q
-EC:/Users/unaip/git/bets21github/Bets21/src/main/java/domain/User.java	 (‘
-
-Q
-EC:/Users/unaip/git/bets21github/Bets21/src/main/java/domain/User.java	 (
+)domain.User#getFechaNac()Ljava/util/Date;B
+6C:/Users/unaip/git/Bets/src/main/java/domain/User.java ("1*©
+1B
+6C:/Users/unaip/git/Bets/src/main/java/domain/User.java	 (
+
+B
+6C:/Users/unaip/git/Bets/src/main/java/domain/User.java	 (
 %0java.util.Date"__id**
 domain.User"
 
-fechaNac"k
-Q
-EC:/Users/unaip/git/bets21github/Bets21/src/main/java/domain/User.java (
+fechaNac"\
+B
+6C:/Users/unaip/git/Bets/src/main/java/domain/User.java (
 
 %0java.util.DateB
 domain.User

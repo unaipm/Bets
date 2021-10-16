@@ -1,79 +1,79 @@
 
-(domain.User#toString()Ljava/lang/String;Q
-EC:/Users/unaip/git/bets21github/Bets21/src/main/java/domain/User.java¢ ¢("1*Ö
-1Q
-EC:/Users/unaip/git/bets21github/Bets21/src/main/java/domain/User.java§	 §(ë
-é
-Q
-EC:/Users/unaip/git/bets21github/Bets21/src/main/java/domain/User.java§	 §(
+(domain.User#toString()Ljava/lang/String;B
+6C:/Users/unaip/git/Bets/src/main/java/domain/User.java¢ ¢("1*œ
+1B
+6C:/Users/unaip/git/Bets/src/main/java/domain/User.java§	 §(Å
+
+B
+6C:/Users/unaip/git/Bets/src/main/java/domain/User.java§	 §(
 %0java.lang.String"__id**
 domain.User"
-Nombreö
-ó
-Q
-EC:/Users/unaip/git/bets21github/Bets21/src/main/java/domain/User.java§	 §(
+Nombreã
+à
+B
+6C:/Users/unaip/git/Bets/src/main/java/domain/User.java§	 §(
 %1java.lang.String"__concat*
 
 %0java.lang.String*
-, î
-ë
-Q
-EC:/Users/unaip/git/bets21github/Bets21/src/main/java/domain/User.java§ §((
+, Ö
+Ç
+B
+6C:/Users/unaip/git/Bets/src/main/java/domain/User.java§ §((
 %2java.lang.String"__id**
 domain.User"
-	Apellido1¨
-©
-Q
-EC:/Users/unaip/git/bets21github/Bets21/src/main/java/domain/User.java§	 §((
+	Apellido1ù
+ö
+B
+6C:/Users/unaip/git/Bets/src/main/java/domain/User.java§	 §((
 %3java.lang.String"__concat*
 
 %1java.lang.String*
 
-%2java.lang.Stringö
-ó
-Q
-EC:/Users/unaip/git/bets21github/Bets21/src/main/java/domain/User.java§	 §(-
+%2java.lang.Stringã
+à
+B
+6C:/Users/unaip/git/Bets/src/main/java/domain/User.java§	 §(-
 %4java.lang.String"__concat*
 
 %3java.lang.String*
-, î
-ë
-Q
-EC:/Users/unaip/git/bets21github/Bets21/src/main/java/domain/User.java§. §(<
+, Ö
+Ç
+B
+6C:/Users/unaip/git/Bets/src/main/java/domain/User.java§. §(<
 %5java.lang.String"__id**
 domain.User"
-	Apellido2¨
-©
-Q
-EC:/Users/unaip/git/bets21github/Bets21/src/main/java/domain/User.java§	 §(<
+	Apellido2ù
+ö
+B
+6C:/Users/unaip/git/Bets/src/main/java/domain/User.java§	 §(<
 %6java.lang.String"__concat*
 
 %4java.lang.String*
 
-%5java.lang.String°
-û
-Q
-EC:/Users/unaip/git/bets21github/Bets21/src/main/java/domain/User.java§	 §(H
+%5java.lang.Stringí
+è
+B
+6C:/Users/unaip/git/Bets/src/main/java/domain/User.java§	 §(H
 %7java.lang.String"__concat*
 
 %6java.lang.String*
-	\nEmail: ê
-ç
-Q
-EC:/Users/unaip/git/bets21github/Bets21/src/main/java/domain/User.java§I §(S
+	\nEmail: Ä
+~
+B
+6C:/Users/unaip/git/Bets/src/main/java/domain/User.java§I §(S
 %8java.lang.String"__id**
 domain.User"
-email¨
-©
-Q
-EC:/Users/unaip/git/bets21github/Bets21/src/main/java/domain/User.java§	 §(S
+emailù
+ö
+B
+6C:/Users/unaip/git/Bets/src/main/java/domain/User.java§	 §(S
 %9java.lang.String"__concat*
 
 %7java.lang.String*
 
-%8java.lang.String"m
-Q
-EC:/Users/unaip/git/bets21github/Bets21/src/main/java/domain/User.java§ §(T
+%8java.lang.String"^
+B
+6C:/Users/unaip/git/Bets/src/main/java/domain/User.java§ §(T
 
 %9java.lang.StringB
 domain.User

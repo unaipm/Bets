@@ -1,16 +1,16 @@
 
-/domain.Event#getDescription()Ljava/lang/String;P
-FC:/Users/unaip/git/bets21github/Bets21/src/main/java/domain/Event.javaA A("1*Ü
-1P
-FC:/Users/unaip/git/bets21github/Bets21/src/main/java/domain/Event.javaB	 B(–
-“
-P
-FC:/Users/unaip/git/bets21github/Bets21/src/main/java/domain/Event.javaB	 B(
+/domain.Event#getDescription()Ljava/lang/String;A
+7C:/Users/unaip/git/Bets/src/main/java/domain/Event.javaA A("1*¯
+1A
+7C:/Users/unaip/git/Bets/src/main/java/domain/Event.javaB	 B(‡
+„
+A
+7C:/Users/unaip/git/Bets/src/main/java/domain/Event.javaB	 B(
 %0java.lang.String"__id*!*
 domain.Event"
-description"l
-P
-FC:/Users/unaip/git/bets21github/Bets21/src/main/java/domain/Event.javaB B(
+description"]
+A
+7C:/Users/unaip/git/Bets/src/main/java/domain/Event.javaB B(
 
 %0java.lang.StringB
 domain.Event

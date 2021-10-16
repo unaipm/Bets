@@ -1,17 +1,17 @@
 
-4domain.Pronosticos#getPronostico()Ljava/lang/String;V
-LC:/Users/unaip/git/bets21github/Bets21/src/main/java/domain/Pronosticos.java9 9("1*Û
-1V
-LC:/Users/unaip/git/bets21github/Bets21/src/main/java/domain/Pronosticos.java:	 :(°
-û
-V
-LC:/Users/unaip/git/bets21github/Bets21/src/main/java/domain/Pronosticos.java:	 :(
+4domain.Pronosticos#getPronostico()Ljava/lang/String;G
+=C:/Users/unaip/git/Bets/src/main/java/domain/Pronosticos.java9 9("1*∆
+1G
+=C:/Users/unaip/git/Bets/src/main/java/domain/Pronosticos.java:	 :(í
+è
+G
+=C:/Users/unaip/git/Bets/src/main/java/domain/Pronosticos.java:	 :(
 %0java.lang.String"__id*&*$
 domain.Pronosticos"
 
-pronostico"r
-V
-LC:/Users/unaip/git/bets21github/Bets21/src/main/java/domain/Pronosticos.java: :(
+pronostico"c
+G
+=C:/Users/unaip/git/Bets/src/main/java/domain/Pronosticos.java: :(
 
 %0java.lang.StringB
 domain.Pronosticos

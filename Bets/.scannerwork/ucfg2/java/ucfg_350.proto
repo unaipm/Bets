@@ -1,33 +1,0 @@
-
-WbusinessLogic.BLFacadeImplementation#getEventsMonth(Ljava/util/Date;)Ljava/util/Vector;j
-^C:/Users/unaip/git/bets21github/Bets21/src/main/java/businessLogic/BLFacadeImplementation.javaé  é(."startingBlock*Õ
-startingBlockj
-^C:/Users/unaip/git/bets21github/Bets21/src/main/java/businessLogic/BLFacadeImplementation.javaé. é(9™
-ß
-j
-^C:/Users/unaip/git/bets21github/Bets21/src/main/java/businessLogic/BLFacadeImplementation.javaé é(
-%0"
-__annotate*
-	WebMethod*
-
-datejava.util.Dateù
-ö
-j
-^C:/Users/unaip/git/bets21github/Bets21/src/main/java/businessLogic/BLFacadeImplementation.javaé4 é(8
-datejava.util.Date"__annotation*
-
-%0*
-1*ñ
-1j
-^C:/Users/unaip/git/bets21github/Bets21/src/main/java/businessLogic/BLFacadeImplementation.javaè è(ò
-ï
-j
-^C:/Users/unaip/git/bets21github/Bets21/src/main/java/businessLogic/BLFacadeImplementation.javaê ê(5
-datesjava.util.Vector"__id*
-"""â
-j
-^C:/Users/unaip/git/bets21github/Bets21/src/main/java/businessLogic/BLFacadeImplementation.javaí í(
-
-datesjava.util.Vector:
-datejava.util.DateB(&
-$businessLogic.BLFacadeImplementation

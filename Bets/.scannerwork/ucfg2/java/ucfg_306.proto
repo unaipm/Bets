@@ -1,23 +1,0 @@
-
-4domain.Event#DoesQuestionExists(Ljava/lang/String;)ZP
-FC:/Users/unaip/git/bets21github/Bets21/src/main/java/domain/Event.javak k(""5*±
-3P
-FC:/Users/unaip/git/bets21github/Bets21/src/main/java/domain/Event.javan n("Z
-P
-FC:/Users/unaip/git/bets21github/Bets21/src/main/java/domain/Event.javan n(
-""*Œ
-5P
-FC:/Users/unaip/git/bets21github/Bets21/src/main/java/domain/Event.javal l(¬©
-P
-FC:/Users/unaip/git/bets21github/Bets21/src/main/java/domain/Event.javal l(%
-%0"-domain.Event#getQuestions()Ljava/util/Vector;*
-domain.Event2getQuestions()*
-3
-1*±
-1P
-FC:/Users/unaip/git/bets21github/Bets21/src/main/java/domain/Event.javap	 p("Z
-P
-FC:/Users/unaip/git/bets21github/Bets21/src/main/java/domain/Event.javap p(
-"":
-questionjava.lang.StringB
-domain.Event

@@ -1,0 +1,16 @@
+
++domain.Event#getEventDate()Ljava/util/Date;P
+FC:/Users/unaip/git/bets21github/Bets21/src/main/java/domain/Event.javaI I("1*Ö
+1P
+FC:/Users/unaip/git/bets21github/Bets21/src/main/java/domain/Event.javaJ	 J(’
+
+P
+FC:/Users/unaip/git/bets21github/Bets21/src/main/java/domain/Event.javaJ	 J(
+%0java.util.Date"__id**
+domain.Event"
+	eventDate"j
+P
+FC:/Users/unaip/git/bets21github/Bets21/src/main/java/domain/Event.javaJ J(
+
+%0java.util.DateB
+domain.Event

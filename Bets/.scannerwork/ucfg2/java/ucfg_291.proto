@@ -1,0 +1,79 @@
+
+(domain.User#toString()Ljava/lang/String;Q
+EC:/Users/unaip/git/bets21github/Bets21/src/main/java/domain/User.java¢ ¢("1*…
+1Q
+EC:/Users/unaip/git/bets21github/Bets21/src/main/java/domain/User.java¤	 ¤(‘
+Ž
+Q
+EC:/Users/unaip/git/bets21github/Bets21/src/main/java/domain/User.java¤	 ¤(
+%0java.lang.String"__id**
+domain.User"
+Nombreš
+—
+Q
+EC:/Users/unaip/git/bets21github/Bets21/src/main/java/domain/User.java¤	 ¤(
+%1java.lang.String"__concat*
+
+%0java.lang.String*
+, ”
+‘
+Q
+EC:/Users/unaip/git/bets21github/Bets21/src/main/java/domain/User.java¤ ¤((
+%2java.lang.String"__id**
+domain.User"
+	Apellido1¬
+©
+Q
+EC:/Users/unaip/git/bets21github/Bets21/src/main/java/domain/User.java¤	 ¤((
+%3java.lang.String"__concat*
+
+%1java.lang.String*
+
+%2java.lang.Stringš
+—
+Q
+EC:/Users/unaip/git/bets21github/Bets21/src/main/java/domain/User.java¤	 ¤(-
+%4java.lang.String"__concat*
+
+%3java.lang.String*
+, ”
+‘
+Q
+EC:/Users/unaip/git/bets21github/Bets21/src/main/java/domain/User.java¤. ¤(<
+%5java.lang.String"__id**
+domain.User"
+	Apellido2¬
+©
+Q
+EC:/Users/unaip/git/bets21github/Bets21/src/main/java/domain/User.java¤	 ¤(<
+%6java.lang.String"__concat*
+
+%4java.lang.String*
+
+%5java.lang.String¡
+ž
+Q
+EC:/Users/unaip/git/bets21github/Bets21/src/main/java/domain/User.java¤	 ¤(H
+%7java.lang.String"__concat*
+
+%6java.lang.String*
+	\nEmail: 
+
+Q
+EC:/Users/unaip/git/bets21github/Bets21/src/main/java/domain/User.java¤I ¤(S
+%8java.lang.String"__id**
+domain.User"
+email¬
+©
+Q
+EC:/Users/unaip/git/bets21github/Bets21/src/main/java/domain/User.java¤	 ¤(S
+%9java.lang.String"__concat*
+
+%7java.lang.String*
+
+%8java.lang.String"m
+Q
+EC:/Users/unaip/git/bets21github/Bets21/src/main/java/domain/User.java¤ ¤(T
+
+%9java.lang.StringB
+domain.User

@@ -562,7 +562,7 @@ public class DataAccess {
 	/**
 	 * Cambia los creditos positiva o negativamente
 	 * @param usr el usuario del cual se cambian
-	 * @param chuti el numero de creditos, positivo para a�adir, negativo para sustraer
+	 * @param chuti el numero de creditos, positivo para anadir, negativo para sustraer
 	 * @throws NotEnoughChuti lanza esto si no hay suficientes creditos en la substraccion 
 	 */
 	public void setChutiGoles(User usr, Double chuti) throws NotEnoughChuti {

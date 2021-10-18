@@ -123,7 +123,7 @@ public class AdministrarFondosGUI extends JFrame{
 				String tarjeta = textoNumTarjeta.getText();
 				try {
 					facade.comprobarTarjeta(tarjeta);
-					facade.añadirTarjetaUsr(tarjeta);
+					facade.anadirTarjetaUsr(tarjeta);
 					suInit();
 				} catch (ErrorCreditCard e) {
 					lblTarjetaErronea.setVisible(false);

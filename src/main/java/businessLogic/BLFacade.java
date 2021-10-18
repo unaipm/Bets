@@ -354,7 +354,7 @@ public interface BLFacade  {
 	public Vector<Card> obtenerTarjetasUsr()throws NoCardsStored;
 	
 	@WebMethod 
-	public void añadirTarjetaUsr(String usr);
+	public void anadirTarjetaUsr(String usr);
 	/**
 	 * Metodo que comprueba si una tarjeta es valida (tiene 16 numeros)
 	 * @param tarjeta Numero a comprobar

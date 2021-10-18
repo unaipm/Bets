@@ -153,8 +153,9 @@ public class LogInGUI extends JFrame {
 				} catch (WrongDNI e1) {
 					lblNewLabel_3.setVisible(true);
 
-				} catch (UserDoesntExist | DifferentPasswords e2) {
-
+				} catch (UserDoesntExist e2) {
+					lblNewLabel_4.setVisible(true);
+				} catch ( DifferentPasswords e2) {
 					lblNewLabel_4.setVisible(true);
 				} 
 			}

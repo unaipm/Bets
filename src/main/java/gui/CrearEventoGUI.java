@@ -257,7 +257,9 @@ public class CrearEventoGUI extends JFrame {
 				} catch (StringIsEmpty e1) {
 					lblNewLabel_3.setVisible(true);
 
-				} catch (NullPointerException | OldDateError e1) {
+				} catch (NullPointerException e1) {
+					lblNewLabel_4.setVisible(true);
+				} catch (OldDateError e1) {
 					lblNewLabel_4.setVisible(true);
 				}
 			}

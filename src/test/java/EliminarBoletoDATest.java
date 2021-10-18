@@ -117,13 +117,7 @@ class EliminarBoletoDATest {
 			fail ("No deberia ocurrir esto");
 		} catch (ParseException e) {
 			fail ("Fecha mal puesta");
-		} finally {
-			// Leave the objects in the database as they were
-			double valor = 20;
-			testDA.open();
-			//testDA.setChutiGoles(11223344, -valor);
-			testDA.close();
-			}
+		}
 		}
 	
 	@Test
@@ -131,16 +125,16 @@ class EliminarBoletoDATest {
 	void test4() {
 		// configure the state of the system (create object in the dabatase)
 		try {
-			String codigo = "20gratis";
+			String codigo = "10gratis";
 			int max = 40;
-			double valor = 20;
+			double valor = 10;
 			SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 			Date oneDate = sdf.parse("05/10/2001");
 			User ad = new User(11223344, "12345678","admin", "ad", "ad", "ad@gmail.com",oneDate);
 			testDA.open();
 			b = testDA.crearBoleto(codigo, max, valor);
 			testDA.close();
-
+			
 			// invoke System Under Test (sut) and Assert
 			sut.eliminarBoleto(codigo);
 			
@@ -148,7 +142,47 @@ class EliminarBoletoDATest {
 			testDA.open();
 			assertNull(testDA.getBoleto(codigo));
 			User admin= testDA.createUser(ad);
-			assertEquals(1000820.0,admin.getChutiGoles());
+			assertEquals(1000420.0,admin.getChutiGoles());
+			testDA.close();				
+			
+			
+		} catch (NotEnoughChuti e) {
+			fail("Admin has not enough chuti");
+		} catch (CodigoRepetido e) {
+			fail("Codigo esta repetido");
+		} catch (BoletoNoExiste e) {
+			fail ("No deberia ocurrir esto");
+		} catch (ParseException e) {
+			fail ("Fecha mal puesta");
+		} catch (MaxUsed e) {
+			fail ("No deberia ocurrir esto");
+		}
+
+	}
+	
+	@Test
+	// sut.eliminarBoleto: El boleto falta por usarse varias veces.
+	void test5() {
+		// configure the state of the system (create object in the dabatase)
+		try {
+			String codigo = "15gratis";
+			int max = 1;
+			double valor = 15;
+			SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+			Date oneDate = sdf.parse("05/10/2001");
+			User ad = new User(11223344, "12345678","admin", "ad", "ad", "ad@gmail.com",oneDate);
+			testDA.open();
+			b = testDA.crearBoleto(codigo, max, valor);
+			testDA.close();
+			
+			// invoke System Under Test (sut) and Assert
+			sut.eliminarBoleto(codigo);
+			
+			// verify DB
+			testDA.open();
+			assertNull(testDA.getBoleto(codigo));
+			User admin= testDA.createUser(ad);
+			assertEquals(1000435.0,admin.getChutiGoles());
 			testDA.close();				
 			
 			

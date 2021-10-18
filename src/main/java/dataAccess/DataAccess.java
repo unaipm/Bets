@@ -993,6 +993,7 @@ public class DataAccess {
 	 */
 	public void eliminarBoleto(String codigo) throws BoletoNoExiste, MaxUsed {
 		Boleto b = db.find(Boleto.class, codigo);
+		
 		if (b==null) {
 			throw new BoletoNoExiste();
 		}

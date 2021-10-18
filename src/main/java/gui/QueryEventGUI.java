@@ -21,14 +21,18 @@ import javax.swing.JLabel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
-import org.jdatepicker.impl.JDatePanelImpl;
-import org.jdatepicker.impl.JDatePickerImpl;
-import org.jdatepicker.impl.UtilDateModel;
+//import org.jdatepicker.impl.JDatePanelImpl;
+//import org.jdatepicker.impl.JDatePickerImpl;
+//import org.jdatepicker.impl.UtilDateModel;
 import com.toedter.calendar.JCalendar;
 import businessLogic.BLFacade;
 import configuration.UtilDate;
 import dependencies.DateLabelFormatter;
 import exceptions.OldDateError;
+import net.sourceforge.jdatepicker.impl.JDatePanelImpl;
+import net.sourceforge.jdatepicker.impl.JDatePickerImpl;
+import net.sourceforge.jdatepicker.impl.UtilDateModel;
+
 import javax.swing.JTextField;
 import javax.swing.JCheckBox;
 
@@ -280,7 +284,7 @@ public class QueryEventGUI extends JFrame {
 		p.put("text.today", "Hoy");
 		p.put("text.month", "Month");
 		p.put("text.year", "Year");
-		JDatePanelImpl datePanel = new JDatePanelImpl(model,p);
+		JDatePanelImpl datePanel = new JDatePanelImpl(model);
 		datePicker = new JDatePickerImpl(datePanel, new DateLabelFormatter());
 		datePicker.setBounds(202, 305, 129, 20);
 		getContentPane().add(datePicker);

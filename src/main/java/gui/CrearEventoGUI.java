@@ -19,9 +19,9 @@ import javax.swing.JTable;
 import javax.swing.border.EmptyBorder;
 import javax.swing.table.DefaultTableModel;
 
-import org.jdatepicker.impl.JDatePanelImpl;
-import org.jdatepicker.impl.JDatePickerImpl;
-import org.jdatepicker.impl.UtilDateModel;
+//import org.jdatepicker.impl.JDatePanelImpl;
+//import org.jdatepicker.impl.JDatePickerImpl;
+//import org.jdatepicker.impl.UtilDateModel;
 import businessLogic.BLFacade;
 import configuration.UtilDate;
 import dependencies.DateLabelFormatter;
@@ -29,6 +29,10 @@ import domain.Equipo;
 import domain.Event;
 import exceptions.OldDateError;
 import exceptions.StringIsEmpty;
+import net.sourceforge.jdatepicker.impl.JDatePanelImpl;
+import net.sourceforge.jdatepicker.impl.JDatePickerImpl;
+import net.sourceforge.jdatepicker.impl.UtilDateModel;
+
 import javax.swing.JButton;
 import javax.swing.JTextField;
 import javax.swing.JList;
@@ -99,7 +103,7 @@ public class CrearEventoGUI extends JFrame {
 		p.put("text.today", "Hoy");
 		p.put("text.month", "Month");
 		p.put("text.year", "Year");
-		JDatePanelImpl datePanel = new JDatePanelImpl(model,p);
+		JDatePanelImpl datePanel = new JDatePanelImpl(model);
 		JDatePickerImpl datePicker = new JDatePickerImpl(datePanel, new DateLabelFormatter());
 		datePicker.setBounds(10, 49, 129, 20);
 		contentPane.add(datePicker);

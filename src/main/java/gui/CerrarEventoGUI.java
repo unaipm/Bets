@@ -20,14 +20,17 @@ import javax.swing.JTable;
 import javax.swing.border.EmptyBorder;
 import javax.swing.table.DefaultTableModel;
 
-import org.jdatepicker.impl.JDatePanelImpl;
-import org.jdatepicker.impl.JDatePickerImpl;
-import org.jdatepicker.impl.UtilDateModel;
+//import org.jdatepicker.impl.JDatePanelImpl;
+//import org.jdatepicker.impl.JDatePickerImpl;
+//import org.jdatepicker.impl.UtilDateModel;
 
 import businessLogic.BLFacade;
 import dependencies.DateLabelFormatter;
 import domain.Event;
 import domain.Question;
+import net.sourceforge.jdatepicker.impl.JDatePanelImpl;
+import net.sourceforge.jdatepicker.impl.JDatePickerImpl;
+import net.sourceforge.jdatepicker.impl.UtilDateModel;
 
 public class CerrarEventoGUI extends JFrame implements Serializable{
 
@@ -109,7 +112,7 @@ public class CerrarEventoGUI extends JFrame implements Serializable{
 		p.put("text.today", "Hoy");
 		p.put("text.month", "Month");
 		p.put("text.year", "Year");
-		JDatePanelImpl datePanel = new JDatePanelImpl(model,p);
+		JDatePanelImpl datePanel = new JDatePanelImpl(model);
 		JDatePickerImpl datePicker = new JDatePickerImpl(datePanel, new DateLabelFormatter());
 		datePicker.setBounds(10, 49, 129, 20);
 		contentPane.add(datePicker);
@@ -119,7 +122,7 @@ public class CerrarEventoGUI extends JFrame implements Serializable{
 		p2.put("text.today", "Hoy");
 		p2.put("text.month", "Month");
 		p2.put("text.year", "Year");
-		JDatePanelImpl datePanel2 = new JDatePanelImpl(model2,p2);
+		JDatePanelImpl datePanel2 = new JDatePanelImpl(model2);
 		JDatePickerImpl datePicker2 = new JDatePickerImpl(datePanel2, new DateLabelFormatter());
 		datePicker2.setBounds(10, 75, 129, 20);
 		contentPane.add(datePicker2);

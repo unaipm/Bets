@@ -16,9 +16,9 @@ import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 import javax.swing.border.EmptyBorder;
 
-import org.jdatepicker.impl.JDatePanelImpl;
-import org.jdatepicker.impl.JDatePickerImpl;
-import org.jdatepicker.impl.UtilDateModel;
+//import org.jdatepicker.impl.JDatePanelImpl;
+//import org.jdatepicker.impl.JDatePickerImpl;
+//import org.jdatepicker.impl.UtilDateModel;
 
 import businessLogic.BLFacade;
 import dependencies.DateLabelFormatter;
@@ -32,6 +32,9 @@ import exceptions.PreferencesNotChecked;
 import exceptions.UserAlreadyExist;
 import exceptions.WrongDNI;
 import exceptions.WrongEmailPattern;
+import net.sourceforge.jdatepicker.impl.JDatePanelImpl;
+import net.sourceforge.jdatepicker.impl.JDatePickerImpl;
+import net.sourceforge.jdatepicker.impl.UtilDateModel;
 
 
 
@@ -233,7 +236,7 @@ public class SignUpGUI extends JFrame {
 		p.put("text.today", "Hoy");
 		p.put("text.month", "Month");
 		p.put("text.year", "Year");
-		JDatePanelImpl datePanel = new JDatePanelImpl(model,p);
+		JDatePanelImpl datePanel = new JDatePanelImpl(model);
 		JDatePickerImpl datePicker = new JDatePickerImpl(datePanel, new DateLabelFormatter());
 		datePicker.setBounds(130, 295, 129, 20);
 		contentPane.add(datePicker);

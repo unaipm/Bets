@@ -109,12 +109,12 @@ public class DataAccess {
 			Question q6;
 
 			if (Locale.getDefault().equals(new Locale("es"))) {
-				q1 = ev1.addQuestion("¿Quien ganara el partido?", 1, false);
-				q2 = ev1.addQuestion("¿Quien metera el primer gol?", 2, false);
-				q3 = ev1.addQuestion("¿Quien ganara el partido?", 1, false);
-				q4 = ev5.addQuestion("¿Cuantos goles se marcarï¿½n?", 2, false);
-				q5 = ev5.addQuestion("¿Quien ganara el partido?", 1, false);
-				q6 = ev5.addQuestion("¿Habra goles en la primera parte?", 2, false);
+				q1 = ev1.addQuestion("Quien ganara el partido?", 1, false);
+				q2 = ev1.addQuestion("Quien metera el primer gol?", 2, false);
+				q3 = ev1.addQuestion("Quien ganara el partido?", 1, false);
+				q4 = ev5.addQuestion("Cuantos goles se marcaron?", 2, false);
+				q5 = ev5.addQuestion("Quien ganara el partido?", 1, false);
+				q6 = ev5.addQuestion("Habra goles en la primera parte?", 2, false);
 			} else if (Locale.getDefault().equals(new Locale("en"))) {
 				q1 = ev1.addQuestion("Who will win the match?", 1, false);
 				q2 = ev1.addQuestion("Who will score first?", 2, false);
@@ -562,7 +562,7 @@ public class DataAccess {
 	/**
 	 * Cambia los creditos positiva o negativamente
 	 * @param usr el usuario del cual se cambian
-	 * @param chuti el numero de creditos, positivo para añadir, negativo para sustraer
+	 * @param chuti el numero de creditos, positivo para aï¿½adir, negativo para sustraer
 	 * @throws NotEnoughChuti lanza esto si no hay suficientes creditos en la substraccion 
 	 */
 	public void setChutiGoles(User usr, Double chuti) throws NotEnoughChuti {
@@ -718,8 +718,8 @@ public class DataAccess {
 	}
 
 	/**
-	 * Añade una apuesta 
-	 * @param apuesta la apuesta a añadir
+	 * Aï¿½ade una apuesta 
+	 * @param apuesta la apuesta a aï¿½adir
 	 */
 	public void addApuesta(Apuesta apuesta) {
 
@@ -835,7 +835,7 @@ public class DataAccess {
 	}
 
 	/**
-	 * Añade un evento
+	 * Aï¿½ade un evento
 	 * @param descripcion la descripcion del evento
 	 * @param fecha la fecha de dicho evento
 	 */
@@ -863,9 +863,9 @@ public class DataAccess {
 	}
 
 	/**
-	 * Metodo para añadir tarjeta al usuario
-	 * @param us usuario al que añadir la tarjeta
-	 * @param tarjeta tarjeta que añadir al usuario
+	 * Metodo para aï¿½adir tarjeta al usuario
+	 * @param us usuario al que aï¿½adir la tarjeta
+	 * @param tarjeta tarjeta que aï¿½adir al usuario
 	 */
 	public void addCardUser(User us, String tarjeta) {
 		db.getTransaction().begin();
@@ -875,7 +875,7 @@ public class DataAccess {
 		db.persist(u);
 		db.persist(c);
 		db.getTransaction().commit();
-		System.out.println("Tarjeta del usuario añadida correctamente"+u.getCards());
+		System.out.println("Tarjeta del usuario aï¿½adida correctamente"+u.getCards());
 	}
 
 	/**
@@ -1010,7 +1010,7 @@ public class DataAccess {
 	/**
 	 * Metodo para hacer un pago
 	 * @param usr usuario del que se hace el pago
-	 * @param chutis chutigoles que se han añadido a la cuenta
+	 * @param chutis chutigoles que se han aï¿½adido a la cuenta
 	 * @param hoy fecha del pago
 	 * @param card tarjeta con la que se ha hecho el pago
 	 */

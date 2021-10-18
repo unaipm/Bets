@@ -156,7 +156,7 @@ public class CreateApuestaGUI extends JFrame {
 				try {
 
 					domain.Question question = ((domain.Question) jComboBoxQuestions.getSelectedItem());
-					lblApuestaMin.setText("Min: "+question.getBetMinimum()+" €");
+					lblApuestaMin.setText("Min: "+question.getBetMinimum());
 
 					Vector<domain.Pronosticos> pronosticos = facade.getPronosticosFromQuestion(question);
 

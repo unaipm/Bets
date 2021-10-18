@@ -1,32 +1,25 @@
 package gui;
 
-/**
- * @author Software Engineering teachers
- */
-
-
-import javax.swing.*;
-import domain.Event;
-import businessLogic.BLFacade;
-import configuration.UtilDate;
-
-import java.awt.Color;
-import java.awt.Font;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.util.Locale;
 import java.util.ResourceBundle;
 import java.util.Vector;
-import java.awt.event.ActionListener;
-import java.awt.event.ActionEvent;
-import com.jgoodies.forms.layout.FormLayout;
-import com.jgoodies.forms.layout.ColumnSpec;
-import com.jgoodies.forms.layout.RowSpec;
-import net.miginfocom.swing.MigLayout;
-import java.awt.FlowLayout;
-import javax.swing.GroupLayout.Alignment;
-import java.awt.GridLayout;
-import com.jgoodies.forms.layout.FormSpecs;
+
+/**
+ * @author Software Engineering teachers
+ */
+import javax.swing.ButtonGroup;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JMenuBar;
+import javax.swing.JPanel;
+import javax.swing.JRadioButton;
+
+import businessLogic.BLFacade;
+import domain.Event;
 
 
 public class AdminMainGUI extends JFrame {

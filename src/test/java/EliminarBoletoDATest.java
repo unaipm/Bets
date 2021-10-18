@@ -121,7 +121,7 @@ class EliminarBoletoDATest {
 			// Leave the objects in the database as they were
 			double valor = 20;
 			testDA.open();
-			testDA.setChutiGoles(11223344, -valor);
+			//testDA.setChutiGoles(11223344, -valor);
 			testDA.close();
 			}
 		}
@@ -148,7 +148,7 @@ class EliminarBoletoDATest {
 			testDA.open();
 			assertNull(testDA.getBoleto(codigo));
 			User admin= testDA.createUser(ad);
-			assertEquals(1000800.0,admin.getChutiGoles());
+			assertEquals(1000820.0,admin.getChutiGoles());
 			testDA.close();				
 			
 			

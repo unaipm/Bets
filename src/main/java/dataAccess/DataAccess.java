@@ -503,7 +503,7 @@ public class DataAccess {
 	}
 
 	/**
-	 * Metodo que crea un usuario y lo a�ade a la base de datos
+	 * Metodo que crea un usuario y lo anade a la base de datos
 	 * 
 	 * @param usr User que representa el usuario a crear
 	 * @return usuario tipo User que rea

@@ -152,6 +152,16 @@ public class TestUtilityDataAccess {
 			return us;
 		}
 		
+		public void setChutiGoles(int dni, Double chuti) {
+			User us = db.find(User.class, dni);
+			if (us != null) {
+				db.getTransaction().begin();
+				us.setChutiGoles(us.getChutiGoles() + chuti);
+				db.getTransaction().commit();
+				return;
+			}
+
+		}
 		
 }
 

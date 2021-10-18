@@ -416,7 +416,7 @@ public interface BLFacade  {
 	public void useBoleto(String codigo, User usuario) throws MaxUsed, BoletoNoExiste, BoletoUsado ;
 	
 	/**
-	 * Metodo para eliminar un boleto
+	 * Metodo para eliminar un boleto que devuelve los chutigoles no usados al Admin.
 	 * @param codigo codigo del boleto a eliminar
 	 * @throws BoletoNoExiste si el boleto no existe
 	 * @throws MaxUsed si el boleto ya ha sido usado su maximo numero de veces

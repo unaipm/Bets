@@ -986,7 +986,7 @@ public class DataAccess {
 	}
 	
 	/**
-	 * Metodo para eliminar un boleto
+	 * Metodo para eliminar un boleto que devuelve los chutigoles no usados al Admin.
 	 * @param codigo codigo del boleto a eliminar
 	 * @throws BoletoNoExiste si el boleto no existe
 	 * @throws MaxUsed si el boleto ha sido usado mas veces de su maximo

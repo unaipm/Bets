@@ -58,6 +58,7 @@ class EliminarBoletoDATest {
 			// verify DB
 			testDA.open();
 			assertNull(testDA.getBoleto(codigo));
+			assertEquals(1000000.0,ad.getChutiGoles());
 			testDA.close();				
 			
 			
@@ -91,7 +92,6 @@ class EliminarBoletoDATest {
 			testDA.open();
 			b = testDA.crearBoleto(codigo, max, valor);
 			testDA.useBoleto(codigo);
-			testDA.createUser(ad);
 			testDA.close();
 
 			// invoke System Under Test (sut) and Assert
@@ -100,6 +100,8 @@ class EliminarBoletoDATest {
 			// verify DB
 			testDA.open();
 			assertNull(testDA.getBoleto(codigo));
+			User admin= testDA.createUser(ad);
+			assertEquals(1000020.0,admin.getChutiGoles());
 			testDA.close();				
 			
 			
@@ -115,9 +117,14 @@ class EliminarBoletoDATest {
 			fail ("No deberia ocurrir esto");
 		} catch (ParseException e) {
 			fail ("Fecha mal puesta");
+		} finally {
+			// Leave the objects in the database as they were
+			double valor = 20;
+			testDA.open();
+			testDA.setChutiGoles(11223344, -valor);
+			testDA.close();
+			}
 		}
-
-	}
 	
 	@Test
 	// sut.eliminarBoleto: El boleto falta por usarse varias veces.
@@ -132,7 +139,6 @@ class EliminarBoletoDATest {
 			User ad = new User(11223344, "12345678","admin", "ad", "ad", "ad@gmail.com",oneDate);
 			testDA.open();
 			b = testDA.crearBoleto(codigo, max, valor);
-			testDA.createUser(ad);
 			testDA.close();
 
 			// invoke System Under Test (sut) and Assert
@@ -141,6 +147,8 @@ class EliminarBoletoDATest {
 			// verify DB
 			testDA.open();
 			assertNull(testDA.getBoleto(codigo));
+			User admin= testDA.createUser(ad);
+			assertEquals(1000800.0,admin.getChutiGoles());
 			testDA.close();				
 			
 			

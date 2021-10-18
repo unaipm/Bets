@@ -3,7 +3,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>Bets2122</groupId>
-	<artifactId>Bets2122Verification</artifactId>
+	<artifactId>BetsUnai</artifactId>
     <version>1</version>
 <build>
 		<plugins>
@@ -55,7 +55,6 @@
     <maven.compiler.source>11</maven.compiler.source>
 	<sonar.organization>unaipm</sonar.organization>
     <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-    <sonar.login>3d8436cb3b8ba1764379337cd4d16100fa7b8106</sonar.login>
 </properties>
 
 	<!-- https://mvnrepository.com/artifact/junit/junit -->

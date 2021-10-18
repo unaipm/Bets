@@ -315,7 +315,7 @@ public class DataAccess {
 	}
 
 	/**
-	 * M�todo que crea y guarda en la base de datos un pronostico
+	 * Metodo que crea y guarda en la base de datos un pronostico
 	 * 
 	 * @param ev     valor del evento
 	 * @param q      valor de la pregunta

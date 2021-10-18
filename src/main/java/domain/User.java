@@ -53,7 +53,7 @@ public class User implements Serializable{
 	 * Constructora de la clase User
 	 * @param numMovil Integer que representa el numero de un telefono movil
 	 * @param dNI Integer que representa un Dni 
-	 * @param contrase�a String que representa una contrase�a
+	 * @param contrasena String que representa una contrasena
 	 * @param nombre String que representa un nombre
 	 * @param apellido1 String que representa un apellido
 	 * @param apellido2 String que representa un apellido

@@ -100,7 +100,7 @@ public class LogInGUI extends JFrame {
 		contentPane.add(lblNewLabel_3);
 		lblNewLabel_3.setVisible(false);
 
-		JLabel lblNewLabel_4 = new JLabel("El usuario o la contrase�a son incorrectas");
+		JLabel lblNewLabel_4 = new JLabel("El usuario o la contrasena son incorrectas");
 		lblNewLabel_4.setBounds(213, 160, 263, 20);
 		contentPane.add(lblNewLabel_4);
 		lblNewLabel_4.setVisible(false);

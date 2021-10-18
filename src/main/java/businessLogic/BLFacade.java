@@ -82,7 +82,7 @@ public interface BLFacade  {
 	@WebMethod public void initializeBD();
 
 	/**
-	 * M�todo que verifica si el DNI es correcto o no (mediante los requerimientos reales de un DNI)
+	 * Mï¿½todo que verifica si el DNI es correcto o no (mediante los requerimientos reales de un DNI)
 	 * @param DNI String que representa un DNI 
 	 * @return Integer que devuelve el DNI
 	 * @throws WrongDNI Excepcion para cuando el DNI no es correcto
@@ -90,26 +90,26 @@ public interface BLFacade  {
 	@WebMethod public int verifyDNI(String DNI) throws WrongDNI;
 
 	/**
-	 * M�todo que obtiene el unsuario que esta logueado en el moemento
+	 * Mï¿½todo que obtiene el unsuario que esta logueado en el moemento
 	 * @return User que devuelve el usuario 
 	 */
 	@WebMethod public User obtainCurrentUsr();
 
 	/**
-	 * M�todo que indica si el usuario es privilegiado o no lo es
+	 * Mï¿½todo que indica si el usuario es privilegiado o no lo es
 	 * @return Boolean que devuelve true si el usuario es privilegiado y false en caso contrario
 	 */
 	@WebMethod public boolean hasPrivileges();
 
 	/**
-	 * M�todo que verifica si la contrase�a es igual a la segunda contrase�a
-	 * @param a String que representa la primera contrase�a
-	 * @param b String que representa la contrase�a repetida
-	 * @throws DifferentPasswords Excepcion para cuando las contrase�as no son iguales
+	 * Mï¿½todo que verifica si la contraseï¿½a es igual a la segunda contraseï¿½a
+	 * @param a String que representa la primera contraseï¿½a
+	 * @param b String que representa la contraseï¿½a repetida
+	 * @throws DifferentPasswords Excepcion para cuando las contraseï¿½as no son iguales
 	 */
 	@WebMethod public void passwordVerify(String a, String b) throws DifferentPasswords;
 	/**
-	 * M�todo que verifica si el email es igual al email anterior
+	 * Mï¿½todo que verifica si el email es igual al email anterior
 	 * @param a String que representa el primer email
 	 * @param b String que representa el email repetido
 	 * @throws DifferentEmails Excepcion para cuando los email no son iguales
@@ -117,20 +117,20 @@ public interface BLFacade  {
 	@WebMethod public void emailVerify(String a, String b) throws DifferentEmails;
 
 	/**
-	 * M�todo que verifica la longitud de la contrase�a escrita
-	 * @param a String que representa la contrase�a
-	 * @throws PasswordMustBeLarger Excepcion para cuando la contrase�a mide menos de 7
+	 * Mï¿½todo que verifica la longitud de la contraseï¿½a escrita
+	 * @param a String que representa la contraseï¿½a
+	 * @throws PasswordMustBeLarger Excepcion para cuando la contraseï¿½a mide menos de 7
 	 */
 	@WebMethod public void passwordLenght(String a) throws PasswordMustBeLarger;
 	/**
-	 * M�todo que verifica la fecha introducida
+	 * Mï¿½todo que verifica la fecha introducida
 	 * @param date Date que representa la fecha del usuario
 	 * @throws NeedMoreThan18y Excepcion para cuando la fecha indicada no cumple que es mayor de 18
 	 */
 	@WebMethod public void ageVerify(Date date) throws NeedMoreThan18y;
 
 	/**
-	 * M�todo que verifica que las casillas de confirmacion esten pulsadas
+	 * Mï¿½todo que verifica que las casillas de confirmacion esten pulsadas
 	 * @param a Casilla1
 	 * @param b Casilla2
 	 * @throws PreferencesNotChecked Devuelve si alguna no lo esta
@@ -138,21 +138,21 @@ public interface BLFacade  {
 	@WebMethod public void checkPreferences(boolean a, boolean b) throws PreferencesNotChecked;
 
 	/**
-	 * M�todo que almacena un usuario ya creado en la base de datos 
+	 * Mï¿½todo que almacena un usuario ya creado en la base de datos 
 	 * @param usr User que representa el usuario a crear
 	 * @throws UserAlreadyExist Excepcion para cuando el usuario ya existe dentro de la base de datos
 	 */
 	@WebMethod public void createUser(User usr) throws UserAlreadyExist;
 
 	/**
-	 * M�todo que elimina un usuario ya creado en la base de datos 
+	 * Mï¿½todo que elimina un usuario ya creado en la base de datos 
 	 * @param usr User que representa el usuario a eliminar
 	 * @throws UserDoesntExist Excepcion para cuando el usuario no existe dentro de la base de datos
 	 */
 	@WebMethod public void deleteUser(User usr) throws UserDoesntExist;
 	
 	/**
-	 * M�todo que valida un email 
+	 * Mï¿½todo que valida un email 
 	 * @param emailStr String que representa el email a verificar
 	 * @throws WrongEmailPattern Excepcion para cuando el emial no cumple ciertas caracteristicas 
 	 * (un String, un @,un String, el . y un String)
@@ -160,26 +160,26 @@ public interface BLFacade  {
 	@WebMethod public void validateEmail(String emailStr) throws WrongEmailPattern;
 
 	/**
-	 * M�todo que comprueba que los campos de nombre y apellidos no esten sin completar
+	 * Mï¿½todo que comprueba que los campos de nombre y apellidos no esten sin completar
 	 * @param usr User que representa el usuario a comprobar
 	 * @throws EmptyNames Excepcion para cuando se ha dejado algun campo sin completar
 	 */
 	@WebMethod public void checkEmptyUsers(User usr) throws EmptyNames;
 
 	/**
-	 * M�todo que loguea a un usuario existente
+	 * Mï¿½todo que loguea a un usuario existente
 	 * @param usr User que representa un esuario a loguear
 	 * @throws UserDoesntExist Excepcion para cuando el usuario indicado no existe
 	 */
 	@WebMethod public void userLogin(int DNI, String passWord) throws UserDoesntExist, DifferentPasswords;
 
 	/**
-	 * M�todo que devuelve el usuario logueado en ese momento
+	 * Mï¿½todo que devuelve el usuario logueado en ese momento
 	 * @return el usuario tipo User que esta logueado
 	 */
 	@WebMethod public User returnCurrentUsr();
 	/**
-	 * M�todo que realiza el log out del usuario actual
+	 * Mï¿½todo que realiza el log out del usuario actual
 	 */
 	@WebMethod public void logOutUser();
 
@@ -192,38 +192,38 @@ public interface BLFacade  {
 
 	@WebMethod public void checkEmptyStrings(String s) throws StringIsEmpty;
 	/**
-	 * M�todo que verifica si la fecha dada es menor a la fecha actual
+	 * Mï¿½todo que verifica si la fecha dada es menor a la fecha actual
 	 * @param d Date que representa la fecha 
 	 * @throws OldDateError la fecha introducida es anterior a la actual
 	 */
 	@WebMethod public void oldDate (Date d)throws OldDateError;
 
 	/**
-	 * M�todo que elimina un evento concreto de la base de datos
-	 * @param e Event que representa un M�todo para eliminar
+	 * Mï¿½todo que elimina un evento concreto de la base de datos
+	 * @param e Event que representa un Mï¿½todo para eliminar
 	 */
 	@WebMethod public void deleteEvent(Event e);
 	/**
-	 * M�todo que cambia la descripcion de un evento
+	 * Mï¿½todo que cambia la descripcion de un evento
 	 * @param e Event que representa el evento a cambiar
 	 * @param s String que representa la nueva descripcion del evento
 	 */
 	@WebMethod public void changeEventDescription(Event e, String s);
 	/**
-	 * M�todo que transdorma un String en un Integer
+	 * Mï¿½todo que transdorma un String en un Integer
 	 * @param s String que representa lo que hay que transformar
 	 * @return Devuelve un tipo Integer del String anterior
 	 * @throws NotNumbersError Excepcion para cuando lo introducido no es un tipo String
 	 */
 	@WebMethod public int stringToInt(String s) throws NotNumbersError;
 	/**
-	 * M�todo que cambia la fecha de un evento concreto
+	 * Mï¿½todo que cambia la fecha de un evento concreto
 	 * @param e Event que representa un evento concreto
 	 * @param d Date que representa la fecha a la se quiere cambiar
 	 */
 	@WebMethod public void changeEventDate(Event e, Date d);
 	/**
-	 * M�todo que crea un pronostico y lo guarda en la base de datos
+	 * Mï¿½todo que crea un pronostico y lo guarda en la base de datos
 	 * @param e Valor que hace referencia al evento
 	 * @param q Valor que hace referencia a la pregunta
 	 * @param pronos String que especifica el pronostico
@@ -233,7 +233,7 @@ public interface BLFacade  {
 	@WebMethod public void createPrognostic(int e,Question q, String pronos, float porcen, Equipo eq) throws PrognosticAlreadyExist;
 
 	/**
-	 * M�todo que devuelve una pregunta de la base de datos
+	 * Mï¿½todo que devuelve una pregunta de la base de datos
 	 * @param ev Valor que hace referencia al evento
 	 * @param q Valor que hace referencia a la pregunta
 	 * @return Question q
@@ -249,7 +249,7 @@ public interface BLFacade  {
 	@WebMethod public User getUser(Integer dni) throws UserDoesntExist;
 	
 	/**
-	 * Banea a un usuario y le muestra el mensaje pasado por par�metro al intentar hacer login
+	 * Banea a un usuario y le muestra el mensaje pasado por parametro al intentar hacer login
 	 * @param usr el usuario a banear
 	 * @param message el mensaje a mostrar
 	 * @throws UserDoesntExist si el usuario no existe
@@ -266,7 +266,7 @@ public interface BLFacade  {
 	/**
 	 * Metodo para cambiar los creditos
 	 * @param usr el usuario del cual quieres cambiar los creditos
-	 * @param chuti los creditos a a�adir o sustraer 
+	 * @param chuti los creditos a anadir o sustraer 
 	 * @throws NotEnoughChuti si no hay suficientes creditos al sustraer 
 	 */
 	@WebMethod public void changeChuti(User usr, Double chuti) throws NotEnoughChuti;
@@ -279,15 +279,15 @@ public interface BLFacade  {
 	@WebMethod Vector<Question> getQuestionsFromEvent(Event evento);
 	
 	/**
-	 * Obtiene los pron�sticos de una pregunta
-	 * @param pregunta la pregunta de la que quieres los pron�sticos
-	 * @return el vector de pron�sticos
+	 * Obtiene los pronósticos de una pregunta
+	 * @param pregunta la pregunta de la que quieres los pronósticos
+	 * @return el vector de pronósticos
 	 */
 	@WebMethod Vector<Pronosticos> getPronosticosFromQuestion(Question pregunta);
 	
 	/**
-	 * Se a�ade una apuesta por parte de un usuario a una pregunta
-	 * @param apuesta la apuesta a a�adir
+	 * Se añade una apuesta por parte de un usuario a una pregunta
+	 * @param apuesta la apuesta a añadir
 	 */
 	@WebMethod void addApuesta(Apuesta apuesta);
 	
@@ -308,15 +308,15 @@ public interface BLFacade  {
 	@WebMethod Event createEvent(String description, Date fecha, Equipo eq1, Equipo eq2);
 	
 	/**
-	 * Recarga el usuario que ha iniciado sesi�n
+	 * Recarga el usuario que ha iniciado sesión
 	 */
 	@WebMethod
 	public void reloadUser();
 	
 	/**
 	 * Obtener eventos entre dos fechas
-	 * @param pastDate el margen izquierdo de la fecha (la m�s antigua)
-	 * @param todayDate  el margen derecho de la fecha (la m�s nueva)
+	 * @param pastDate el margen izquierdo de la fecha (la más antigua)
+	 * @param todayDate  el margen derecho de la fecha (la más nueva)
 	 * @return el vector de eventos entre esas fechas
 	 */
 	@WebMethod
@@ -426,7 +426,7 @@ public interface BLFacade  {
 
 	/**
 	 * Metodo para hacer un pago
-	 * @param chutis chutigoles que se han a�adido a la cuenta
+	 * @param chutis chutigoles que se han añadido a la cuenta
 	 * @param hoy fecha del pago
 	 * @param card tarjeta con la que se ha hecho el pago
 	 */

@@ -152,8 +152,8 @@ public class AdministrarFondosGUI extends JFrame{
 		lblTarjetaErronea.setBounds(232, 203, 167, 14);
 		contentPane.add(lblTarjetaErronea);
 		
-		JButton btnAñadirFondos = new JButton(ResourceBundle.getBundle("Etiquetas").getString("AddFunds")); 
-		btnAñadirFondos.addActionListener(new ActionListener() {
+		JButton btnAnadirFondos = new JButton(ResourceBundle.getBundle("Etiquetas").getString("AddFunds")); 
+		btnAnadirFondos.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				
 				lblSoloEnteros.setVisible(false);
@@ -175,8 +175,8 @@ public class AdministrarFondosGUI extends JFrame{
 				}
 			}
 		});
-		btnAñadirFondos.setBounds(35, 398, 142, 23);
-		contentPane.add(btnAñadirFondos);
+		btnAnadirFondos.setBounds(35, 398, 142, 23);
+		contentPane.add(btnAnadirFondos);
 		
 		JButton btnExtraerFondos = new JButton(ResourceBundle.getBundle("Etiquetas").getString("WithdrawFunds")); 
 		btnExtraerFondos.addActionListener(new ActionListener() {

@@ -49,16 +49,17 @@ class EliminarBoletoBLMockTest {
 	@SuppressWarnings("unchecked")
 	@DisplayName("sut.eliminarBoleto: El boleto ha sido usado su maximo de veces o o un numero menor a su maximo de veces..")
 	@Test
-	void test2() {
+	void test4() {
 		try {
 			// define paramaters
-			String codigo = "20gratis";
+			String codigo = "10gratis";
 
 			// invoke System Under Test (sut)
 			sut.eliminarBoleto(codigo);
 
 			ArgumentCaptor<String> stringCaptor = ArgumentCaptor.forClass(String.class);
 			Mockito.verify(dataAccess, Mockito.times(1)).eliminarBoleto(stringCaptor.capture());
+			
 			assertEquals(codigo, stringCaptor.getValue());
 		} catch (BoletoNoExiste e) {
 			fail("Esto no deberia pasar");

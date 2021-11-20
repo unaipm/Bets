@@ -174,5 +174,4 @@ public class DataAccessPinedo2 {
 		db.getTransaction().commit();
 	}
 
-
 }

@@ -87,71 +87,10 @@ public class DataAccess {
 				year += 1;
 			}
 
-			//this.guardarEquiposDeCsv(null, true);//db.getTransaction().begin();
 
 			final String parLi = "Partido liga";
 			
-//			Event ev1 = new Event(parLi, UtilDate.newDate(year, month, 17), this.obtenerEquipo("Atletico", 2021), this.obtenerEquipo("Athletic", 2021));
-//			Event ev2 = new Event(parLi, UtilDate.newDate(year, month, 17), this.obtenerEquipo("Eibar", 2021), this.obtenerEquipo("Barcelona", 2021));
-//			Event ev3 = new Event(parLi, UtilDate.newDate(year, month, 17), this.obtenerEquipo("Getafe", 2021), this.obtenerEquipo("Celta", 2021));
-//			Event ev4 = new Event(parLi, UtilDate.newDate(year, month, 17), this.obtenerEquipo("Alaves", 2021), this.obtenerEquipo("Villareal", 2021));
-//
-//			Event ev5 = new Event(parLi, UtilDate.newDate(year, month+1, 26), this.obtenerEquipo("Atletico", 2021), this.obtenerEquipo("Athletic", 2021));
-//			Event ev6 = new Event(parLi, UtilDate.newDate(year, month+1, 26), this.obtenerEquipo("Eibar", 2021), this.obtenerEquipo("Barcelona", 2021));
-//			Event ev7 = new Event(parLi, UtilDate.newDate(year, month+1, 26), this.obtenerEquipo("Getafe", 2021), this.obtenerEquipo("Celta", 2021));
-//			Event ev8 = new Event(parLi, UtilDate.newDate(year, month+1, 26), this.obtenerEquipo("Alaves", 2021), this.obtenerEquipo("Villareal", 2021));
-//
-//			Question q1;
-//			Question q2;
-//			Question q3;
-//			Question q4;
-//			Question q5;
-//			Question q6;
-//
-//			if (Locale.getDefault().equals(new Locale("es"))) {
-//				q1 = ev1.addQuestion("Quien ganara el partido?", 1, false);
-//				q2 = ev1.addQuestion("Quien metera el primer gol?", 2, false);
-//				q3 = ev1.addQuestion("Quien ganara el partido?", 1, false);
-//				q4 = ev5.addQuestion("Cuantos goles se marcaron?", 2, false);
-//				q5 = ev5.addQuestion("Quien ganara el partido?", 1, false);
-//				q6 = ev5.addQuestion("Habra goles en la primera parte?", 2, false);
-//			} else if (Locale.getDefault().equals(new Locale("en"))) {
-//				q1 = ev1.addQuestion("Who will win the match?", 1, false);
-//				q2 = ev1.addQuestion("Who will score first?", 2, false);
-//				q3 = ev1.addQuestion("Who will win the match?", 1, false);
-//				q4 = ev5.addQuestion("How many goals will be scored in the match?", 2, false);
-//				q5 = ev5.addQuestion("Who will win the match?", 1, false);
-//				q6 = ev5.addQuestion("Will there be goals in the first half?", 2, false);
-//			} else {
-//				q1 = ev1.addQuestion("Zeinek irabaziko du partidua?", 1, false);
-//				q2 = ev1.addQuestion("Zeinek sartuko du lehenengo gola?", 2, false);
-//				q3 = ev1.addQuestion("Zeinek irabaziko du partidua?", 1, false);
-//				q4 = ev5.addQuestion("Zenbat gol sartuko dira?", 2, false);
-//				q5 = ev5.addQuestion("Zeinek irabaziko du partidua?", 1, false);
-//				q6 = ev5.addQuestion("Golak sartuko dira lehenengo zatian?", 2, false);
-//
-//			}
-//
-//
-//			db.persist(ev1);
-//			db.persist(ev2);
-//			db.persist(ev3);
-//			db.persist(ev4);
-//			db.persist(ev5);
-//			db.persist(ev6);
-//			db.persist(ev7);
-//			db.persist(ev8);
 
-//			User admin = new User(adminDNI, "1234567", "Admin", "Administrador", "SuperUser", "admin@ehu.eus",
-//					UtilDate.newDate(1998, 4, 9));//b
-//			User elpepe = new User(123456789, 12345678, "1234567", "Pepe", "Lope", "deVega", "elpepe@ehu.eus",
-//					UtilDate.newDate(1998, 4, 9));//z
-//
-//			admin.setChutiGoles(1000.0);
-//			elpepe.setChutiGoles(10.0);
-//
-//			db.persist(admin);
-//			db.persist(elpepe);
 			
 			db.getTransaction().commit();
 			System.out.println("Db initialized");
